@@ -1,5 +1,6 @@
 import React from "react";
 import men_img from "../assets/image/svg/smile_man.svg";
+import { Col, Container, Row } from "react-bootstrap";
 
 
 function Testimonials() {
@@ -8,17 +9,17 @@ function Testimonials() {
       <section className='py-5'>
         <div data-aos="fade-up"
           data-aos-duration="3000">
-          <div className='container'>
-            <div className='row overflow-visible'>
-              <div className='col-lg-5'>
+         <Container>
+            <Row className=' overflow-visible'>
+              <Col lg={5} >
                 <p className='text-uppercase ff_poppins clr_gray fw-semibold fs_18 mb-0'>
                   Testimonials
                 </p>
                 <p className='text-capitalize fw-bold fs_50 ff_Volkhov mx_409 clr_navy'>
                   What people say about Us.
                 </p>
-              </div>
-              <div className='col-lg-7'>
+              </Col>
+              <Col lg={7} >
                 <div className='d-flex justify-content-center'>
                   <div className='box position-relative card_box  '>
                     <span className='img_position position-absolute d-none d-xl-block cursor_pointer'>
@@ -37,9 +38,9 @@ function Testimonials() {
                     </p>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
+              </Col>
+            </Row>
+        </Container>
         </div>
       </section>
     </>

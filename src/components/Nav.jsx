@@ -1,11 +1,12 @@
 import React from "react";
 import logo from "../assets/image/svg/logo.svg";
 import arrowDown from "../assets/image/svg/down-arrow.svg";
+import { Container } from "react-bootstrap";
 function Nav() {
     return (
         <>
             <section className='pt-3'>
-                <div className='container'>
+                <Container>
                     <div className='d-flex justify-content-between align-items-center w-100'>
                         <a className='ff_inter fw-bold fs_2xl text-white z_index1' href="#">
                             <img src={logo} alt="logo-img" />
@@ -52,7 +53,7 @@ function Nav() {
                         </ul>
                         <div className='d-lg-none cursor_pointer'> menu</div>
                     </div>
-                </div>
+                </Container>
             </section>
         </>
     );

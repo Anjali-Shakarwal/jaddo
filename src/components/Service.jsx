@@ -4,20 +4,21 @@ import clrBox from "../assets/image/png/clr-box.png";
 import Best_Flights_img from "../assets/image/png/Best_Flights_img.png";
 import Customization from "../assets/image/png/Customization_img.png";
 import Local_Events from "../assets/image/png/Local_Events.png";
+import { Col, Container, Row } from "react-bootstrap";
 
 function Service() {
   return (
     <>
       <section className='py-lg-5 my-lg-5'>
-        <div className='container'>
+       <Container>
           <p className='fs_18 ff_poppins clr-gray text-center fw-semibold'>
             CATEGORY
           </p>
           <h2 className='fs_50 text-center fw-bold clr_navy ff_Volkhov'>
             We Offer Best Services
           </h2>
-          <div className='row mt-5 align-iteam-center justify-content-center'>
-            <div className='col-lg-3 col-sm-6 position-relative'>
+          <Row className=' mt-5 align-iteam-center justify-content-center'>
+            <Col lg={3} Col sm={6} className=' position-relative' data-aos="zoom-in">
               <div className='service_card px-xl-5 px-4 py-4 d-flex align-items-center justify-content-center flex-column'>
                 <img
                   className='position-absolute clr_box'
@@ -32,8 +33,8 @@ function Service() {
                   Built Wicket longer admire do barton vanity itself do in it.
                 </p>
               </div>
-            </div>
-            <div className='col-lg-3 col-sm-6 position-relative'>
+            </Col>
+            <Col lg={3} Col sm={6} className='col-lg-3 col-sm-6 position-relative' data-aos="zoom-in">
               <div className='px-4 py-4 d-flex service_card flex-column align-items-center justify-content-center px-xl-5'>
                 <img
                   className='position-absolute clr_box'
@@ -48,8 +49,8 @@ function Service() {
                   Engrossed listening. Park gate sell they west hard for the.
                 </p>
               </div>
-            </div>
-            <div className='col-lg-3 col-sm-6 position-relative'>
+           </Col>
+            <Col lg={3} Col sm={6} className=' position-relative' data-aos="zoom-in">
               <div className='service_card px-xl-5 px-4 py-4 d-flex flex-column align-items-center justify-content-center'>
                 <img
                   className='position-absolute clr_box'
@@ -64,8 +65,8 @@ function Service() {
                   Barton vanity itself do in it. Preferd to men it engrossed listening.
                 </p>
               </div>
-            </div>
-            <div className='col-lg-3 col-sm-6 position-relative'>
+            </Col>
+            <Col lg={3} Col sm={6} className=' position-relative' data-aos="zoom-in">
               <div className='px-4 py-4 d-flex px-xl-5 flex-column align-items-center justify-content-center service_card'>
                 <img
                   className='position-absolute clr_box'
@@ -82,9 +83,9 @@ function Service() {
                   military customers
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+       </Container>
       </section>
       ;
     </>

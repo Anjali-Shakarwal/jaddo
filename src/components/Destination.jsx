@@ -3,21 +3,24 @@ import rome_img from "../assets/image/png/rome-img.png";
 import london_img from "../assets/image/png/london-img.jpg";
 import europe_img from "../assets/image/png/europe-img.png";
 import send_icon from "../assets/image/svg/send-icon.svg";
+import { Col, Container, Row } from "react-bootstrap";
 
 
 function Destination() {
   return (
     <>
       <section className='py-5'>
-        <div className='container'>
+        <Container>
           <p className='fw-semibold clr_gray fs_18 text-center ff_poppins mb-0'>
             Top Selling
           </p>
           <h2 className='fs_50 mb-0 clr_navy text-center mt-2 fw-bold ff_Volkhov'>
             Top Destinations
           </h2>
-          <div className='row justify-content-center mt-sm-5 pt-3'>
-            <div className='col-md-4 col-sm-6 mt-4 mt-sm-0' data-aos="fade-right">
+          <Row className='justify-content-center mt-sm-5 pt-3'>
+            <Col md={4} Col sm={6} className=' mt-sm-0' data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
               <div className='shadow rounded-4 h-100 shadow_cards'>
                 <img
                   className='w-100 destination_img_radius'
@@ -41,8 +44,10 @@ function Destination() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className='col-md-4 col-sm-6 mt-4 mt-sm-0' data-aos="fade-left">
+            </Col>
+            <Col md={4} col sm={6} className='mt-4 mt-sm-0' data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
               <div className="shadow_cards shadow rounded-4 h-100">
                 <img
                   className='w-100 destination_img_radius'
@@ -66,8 +71,10 @@ function Destination() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className='col-md-4 col-sm-6 mt-4 mt-md-0' data-aos="fade-left">
+            </Col>
+            <Col md={4} col sm={6} className='mt-4 mt-sm-0' data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
               <div className='shadow_cards shadow rounded-4 h-100'>
                 <img
                   className='w-100 destination_img_radius'
@@ -91,9 +98,9 @@ function Destination() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
     </>
   );

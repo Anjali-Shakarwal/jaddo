@@ -1,13 +1,14 @@
 import React from "react";
 import mail from "../assets/image/svg/mail.svg";
 import blue_arrow from "../assets/image/svg/blue_arrow.svg";
+import { Container } from "react-bootstrap";
 
 function Subscribe() {
   return (
     <>
-      <div className='container'>
+    <Container>
         <div className='py-5'>
-          <div className='bg_subscribe position-relative'>
+          <div className='bg_subscribe position-relative' data-aos="zoom-out-down">
             <span className='blue_arrow position-absolute'>
               <img src={blue_arrow} alt="blue_arrow" />
             </span>
@@ -36,7 +37,7 @@ function Subscribe() {
             </div>
           </div>
         </div>
-      </div>
+     </Container>
 
     </>
   );

@@ -1,9 +1,10 @@
 import React from "react";
-import playBtn from "../assets/image/png/Play button.png";
+import play_button from "../assets/image/png/Play button.png";
 import girl_plane_imgl from "../assets/image/png/girl_plane-img.png";
 import layar from "../assets/image/png/hero-yellow-shadow.png";
 import red_line from "../assets/image/png/red_line.png";
 import Nav from "./Nav";
+import { Col, Container, Row } from "react-bootstrap";
 
 function Header() {
   return (
@@ -17,10 +18,11 @@ function Header() {
           src={layar}
           alt="layar"
         />
-        <div className='container position-relative z-1'>
-          <div className='row'>
-            <div className='col-lg-5'>
-              <div>
+        <Container>
+        <div className=' position-relative z-1'>
+          <Row>
+            <Col lg={5}  >
+                <div data-aos="fade-down-right">
                 <p className='fw-bold clr_red fs_20 ff_poppins mt-5'>
                   Best Destinations around the world
                   <img src={red_line} className="red_line d-none d-xl-block" alt="bnt" />
@@ -43,19 +45,20 @@ function Header() {
                     </a>
                   </span>
                   <span className='pb-3'>
-                    <img src={playBtn} alt="bnt" />
+                      <img src={play_button} alt="bnt" />
                     <a className='ff_google clr_gray fs_18' href="#">
                       Find out more
                     </a>
                   </span>
                 </div>
               </div>
-            </div>
-            <div className='col-lg-7 mt-lg-0'>
+            </Col>
+              <Col lg={7} className=' mt-lg-0' data-aos="fade-down-left">
               <img className='w-100' src={girl_plane_imgl} alt="img" />
-            </div>
+            </Col>
+          </Row>
           </div>
-        </div>
+          </Container>
       </section>
     </>
   );

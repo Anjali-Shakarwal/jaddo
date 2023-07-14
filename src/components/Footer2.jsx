@@ -1,20 +1,21 @@
 import React from "react";
 import google_play from "../assets/image/svg/Google Play.png";
 import apple_store from "../assets/image/svg/play_store.svg";
+import { Col, Container, Row } from "react-bootstrap";
 
 function Footer() {
   return (
     <>
       <section className='py-5'>
-        <div className='container'>
-          <div className='row align- items-center pb-3'>
-            <div className='col-sm-6 col-lg-3'>
+        <Container>
+          <Row className='align- items-center pb-3'>
+            <Col sm={6} Col lg={3} >
               <p className='ff_poppins fw-medium fs_44 clr_navy mb-0 position-relative top_19'>Jadoo.</p>
               <p className='ff_poppins fw-medium fs_13 clr_gray mx_254 '>
                 Book your trip in minute, get full Control for much longer.
               </p>
-            </div>
-            <div className='d-lg-none col-sm-6 my-4 col-lg-3'>
+            </Col>
+            <Col sm={6} Col lg={3} className='d-lg-none  my-4'>
               <div className='d-flex align-items-center gap-3 mb-4'>
                 <a href="#">
                   <span className='d-flex  align-items-center justify-content-center footer_icons'>
@@ -93,10 +94,11 @@ function Footer() {
                   <img src={apple_store} alt="apple_store" />
                 </a>
               </div>
-            </div>
-            <div className='col-lg-6'>
-              <div className='row'>
-                <div className='col-6 col-sm-4'>
+          </Col>
+            <Col lg={6} >
+              <Row className="d-flex align-items-center">
+                < Col sm={4} className="col-6">
+                 
                   <p className=' ff_poppins fs_21 clr_dark_black fw-bold mb-4'>
                     Company
                   </p>
@@ -124,8 +126,8 @@ function Footer() {
                       Mobile
                     </a>
                   </span>
-                </div>
-                <div className='col-6 col-sm-4'>
+               </Col>
+                 <Col sm={4} className="col-6">
                   <p className='clr_dark_black ff_poppins fw-bold fs_21 mb-4'>
                     Contact
                   </p>
@@ -153,8 +155,8 @@ function Footer() {
                       Affilates
                     </a>
                   </span>
-                </div>
-                <div className='col-6 col-sm-4 mt-5 mt-sm-0'>
+               </Col>
+                < Col sm={4} className='col-6 mt-5 mt-sm-0'>
                   <p className='clr_dark_black ff_poppins fw-bold fs_21 mb-4'>
                     More
                   </p>
@@ -182,10 +184,10 @@ function Footer() {
                       Low fare tips
                     </a>
                   </span>
-                </div>
-              </div>
-            </div>
-            <div className='d-none d-lg-block col-lg-3'>
+               </Col>
+              </Row>
+           </Col>
+            <Col lg={3} className= 'd-none d-lg-block '>
               <div className='d-flex align-items-center gap-3 mb-4'>
                 <a href="#">
                   <span className='footer_icons d-flex justify-content-center align-items-center'>
@@ -264,14 +266,14 @@ function Footer() {
                   <img src={apple_store} alt="apple_store" />
                 </a>
               </div>
-            </div>
-          </div>
+            </Col>
+          </Row>
           <div className='text-center mt-5'>
             <p className='ff_poppins fw-medium fs_14 clr_gray'>
               All rights reserved@jadoo.co
             </p>
           </div>
-        </div>
+       </Container>
       </section>
     </>
   );
